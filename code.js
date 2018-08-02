@@ -1,6 +1,8 @@
 console.log("its on!!!");
 
-let recognition = new webkitSpeechRecognition();
+window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+let recognition = new SpeechRecognition();
 
 recognition.onResult = function (event) {
     console.log(event)
