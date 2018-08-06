@@ -50,8 +50,6 @@ stopButton.onclick = function () {
     rec.stop();
 }
 
-console.log(save);
-
 save.onclick = function () {
     download('file.txt', p.innerHTML)
 }
